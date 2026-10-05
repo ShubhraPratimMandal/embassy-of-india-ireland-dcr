@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#071526">
+  <meta name="description" content="Embassy of the Republic of India to Ireland | Dublin City Roleplay. Diplomatic affairs, consular services, visas, recruitment, public diplomacy and bilateral records.">
+  <title>Embassy of India to Ireland | Dublin City Roleplay</title>
+  <style>
+    :root{
+      --navy:#071526; --navy2:#0c2036; --cream:#f6f2e9; --paper:#fffdf8;
+      --gold:#d6a84f; --saffron:#ff8a22; --green:#138a50; --teal:#007c7c;
+      --ink:#172234; --muted:#64748b; --line:#dfe5eb; --danger:#a83a32;
+      --shadow:0 18px 50px rgba(7,21,38,.12); --radius:18px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;background:linear-gradient(180deg,#f3f5f8 0%,#fbfaf7 42%,#f4f7f9 100%);color:var(--ink);line-height:1.6}
+    a{color:inherit}
+    .topbar{background:#06121f;color:#dbe7f2;padding:9px 18px;font-size:.78rem;text-align:center;letter-spacing:.08em;text-transform:uppercase}
+    .topbar strong{color:#fff}
+    header{position:sticky;top:0;z-index:50;background:rgba(7,21,38,.95);backdrop-filter:blur(16px);color:#fff;border-bottom:1px solid rgba(255,255,255,.08)}
+    .nav{max-width:1200px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:14px 22px}
+    .brand{display:flex;align-items:center;gap:13px;text-decoration:none}
+    .seal{width:46px;height:46px;border:1px solid rgba(255,255,255,.3);border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle at 50% 38%,#f8f5ef 0 18%,#d6a84f 19% 21%,transparent 22%),linear-gradient(145deg,#142f4e,#071526);font-size:22px}
+    .brand-text small{display:block;color:#d6a84f;font-size:.67rem;letter-spacing:.16em}
+    .brand-text strong{display:block;font-family:Georgia,serif;font-size:1.04rem;letter-spacing:.02em}
+    nav{display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+    nav a{font-size:.85rem;text-decoration:none;color:#dbe7f2;padding:8px 10px;border-radius:10px}
+    nav a:hover{background:rgba(255,255,255,.07);color:#fff}
+    .menu{display:none;background:none;border:1px solid rgba(255,255,255,.2);color:#fff;padding:8px 10px;border-radius:10px}
+    main{max-width:1200px;margin:auto}
+    .hero{margin:28px 18px 22px;border-radius:28px;overflow:hidden;background:
+      radial-gradient(circle at 84% 18%,rgba(255,138,34,.3),transparent 24%),
+      radial-gradient(circle at 12% 14%,rgba(19,138,80,.28),transparent 25%),
+      linear-gradient(135deg,#071526 0%,#112b47 52%,#183a52 100%);
+      color:#fff;box-shadow:var(--shadow);position:relative}
+    .hero:after{content:"";position:absolute;inset:auto 0 0;height:7px;background:linear-gradient(90deg,var(--saffron) 0 33%,#fff 33% 66%,var(--green) 66%)}
+    .hero-inner{display:grid;grid-template-columns:1.45fr .85fr;gap:24px;padding:52px 50px 64px}
+    .eyebrow{font-size:.78rem;text-transform:uppercase;letter-spacing:.18em;color:#f3cb79;font-weight:700}
+    h1,h2,h3{font-family:Georgia,"Times New Roman",serif}
+    h1{font-size:clamp(2.45rem,6vw,5rem);line-height:1.02;margin:12px 0 14px;letter-spacing:-.02em}
+    .hero p{max-width:780px;color:#d6e1eb;font-size:1.05rem}
+    .hero-cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:12px 16px;border-radius:11px;text-decoration:none;font-weight:700;border:1px solid transparent;cursor:pointer}
+    .btn-primary{background:#fff;color:var(--navy)}
+    .btn-gold{background:var(--gold);color:#17130a}
+    .btn-ghost{border-color:rgba(255,255,255,.25);color:#fff;background:rgba(255,255,255,.06)}
+    .hero-side{display:grid;gap:12px;align-content:center}
+    .hero-card{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:18px}
+    .hero-card b{display:block;color:#f5d997;margin-bottom:4px}
+    .notice{margin:20px 18px;padding:14px 16px;border:1px solid #ead7a8;background:#fff8e8;border-left:5px solid var(--gold);border-radius:12px;font-size:.9rem}
+    section{scroll-margin-top:94px;padding:44px 18px}
+    .section-head{display:flex;justify-content:space-between;gap:24px;align-items:end;margin-bottom:20px}
+    .section-head h2{margin:0;font-size:2.1rem}
+    .section-head p{margin:0;color:var(--muted);max-width:680px}
+    .grid{display:grid;gap:16px}
+    .grid-3{grid-template-columns:repeat(3,1fr)}
+    .grid-4{grid-template-columns:repeat(4,1fr)}
+    .grid-2{grid-template-columns:repeat(2,1fr)}
+    .card{background:rgba(255,255,255,.82);border:1px solid var(--line);border-radius:var(--radius);padding:22px;box-shadow:0 8px 28px rgba(15,23,42,.05)}
+    .card h3{margin:.1rem 0 .45rem;font-size:1.15rem}
+    .card p{margin:.25rem 0;color:#53657a}
+    .kicker{font-size:.74rem;text-transform:uppercase;letter-spacing:.12em;color:var(--teal);font-weight:800}
+    .icon{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;background:#edf4f4;color:#0a5555;font-size:1.25rem;margin-bottom:10px}
+    .service{min-height:180px}
+    .service a,.card-link{display:inline-flex;margin-top:12px;color:#0a5c7b;text-decoration:none;font-weight:700}
+    .service a:hover,.card-link:hover{text-decoration:underline}
+    .application{display:flex;flex-direction:column;justify-content:space-between;min-height:250px}
+    .badge{display:inline-flex;align-items:center;gap:6px;padding:5px 9px;border-radius:999px;font-size:.72rem;font-weight:800;background:#eef4f7;color:#3b5368}
+    .badge.open{background:#e9f7ef;color:#176d45}
+    .badge.pending{background:#fff6dd;color:#8a6210}
+    .badge.rp{background:#efeafe;color:#5f49a4}
+    .timeline{position:relative;margin-top:10px}
+    .timeline:before{content:"";position:absolute;left:14px;top:2px;bottom:2px;width:2px;background:#cfd8e3}
+    .event{position:relative;padding:0 0 24px 46px}
+    .event:before{content:"";position:absolute;left:7px;top:6px;width:16px;height:16px;border-radius:50%;background:#fff;border:4px solid var(--gold);box-shadow:0 0 0 3px #f5ead0}
+    .event strong{font-family:Georgia,serif;font-size:1.1rem}
+    .event time{display:block;font-size:.78rem;color:var(--muted);margin:.1rem 0 .35rem}
+    .table-wrap{overflow:auto;border:1px solid var(--line);border-radius:16px;background:#fff}
+    table{width:100%;border-collapse:collapse;min-width:720px}
+    th,td{padding:13px 14px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+    th{background:#f5f8fa;font-size:.76rem;letter-spacing:.09em;text-transform:uppercase;color:#516273}
+    tr:last-child td{border-bottom:0}
+    .quote{background:linear-gradient(135deg,#071526,#12304c);color:#fff;border-radius:20px;padding:28px;box-shadow:var(--shadow)}
+    .quote blockquote{font-family:Georgia,serif;font-size:1.35rem;line-height:1.45;margin:0}
+    .quote cite{display:block;margin-top:12px;color:#d6a84f;font-style:normal}
+    .document-list{display:grid;gap:10px}
+    .doc{display:flex;justify-content:space-between;gap:14px;align-items:center;padding:14px 16px;border:1px solid var(--line);border-radius:12px;background:#fff}
+    .doc small{display:block;color:var(--muted)}
+    .doc a{text-decoration:none;font-weight:750;color:#0c617e}
+    .press{position:relative;overflow:hidden}
+    .press:after{content:"NEWS";position:absolute;right:-25px;top:13px;transform:rotate(36deg);background:#071526;color:#fff;padding:4px 26px;font-size:.64rem;letter-spacing:.14em}
+    .searchbar{display:flex;gap:10px;max-width:760px;margin-top:12px}
+    .searchbar input{flex:1;padding:13px 14px;border:1px solid var(--line);border-radius:11px;background:#fff;font-size:.95rem}
+    .small{font-size:.84rem}
+    .muted{color:var(--muted)}
+    .footer{margin-top:30px;background:#071526;color:#d8e3ed}
+    .footer-inner{max-width:1200px;margin:auto;padding:42px 18px;display:grid;grid-template-columns:1.2fr .8fr .8fr;gap:30px}
+    .footer h3{color:#fff;margin-top:0}
+    .footer a{color:#d8e3ed;text-decoration:none}
+    .footer a:hover{text-decoration:underline}
+    .footer-bottom{border-top:1px solid rgba(255,255,255,.08);padding:14px 18px;text-align:center;font-size:.78rem;color:#9fb1c2}
+    .hide{display:none!important}
+    @media(max-width:980px){
+      nav{display:none}.menu{display:block}
+      nav.open{display:flex;position:absolute;left:12px;right:12px;top:74px;background:#0a1b2c;padding:10px;border-radius:14px;border:1px solid rgba(255,255,255,.08);flex-direction:column;align-items:stretch}
+      .hero-inner{grid-template-columns:1fr}.grid-4{grid-template-columns:repeat(2,1fr)}.grid-3{grid-template-columns:repeat(2,1fr)}
+      .footer-inner{grid-template-columns:1fr 1fr}
+    }
+    @media(max-width:680px){
+      .nav{padding:12px 15px}.brand-text strong{font-size:.9rem}.brand-text small{font-size:.55rem}
+      .hero-inner{padding:34px 24px 50px}.hero{margin:18px 12px}.notice{margin:16px 12px}
+      section{padding:34px 12px}.grid-3,.grid-4,.grid-2{grid-template-columns:1fr}
+      .section-head{display:block}.section-head p{margin-top:8px}.footer-inner{grid-template-columns:1fr}
+      h1{font-size:2.55rem}
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar"><strong>FICTIONAL ROLEPLAY INSTITUTION</strong> · Dublin City Roleplay / ERLC · Not an official Government of India or Government of Ireland website</div>
+  <header>
+    <div class="nav">
+      <a class="brand" href="#home">
+        <div class="seal">☼</div>
+        <div class="brand-text">
+          <small>REPUBLIC OF INDIA</small>
+          <strong>Embassy of India to Ireland</strong>
+        </div>
+      </a>
+      <button class="menu" id="menuBtn" aria-label="Open navigation">☰</button>
+      <nav id="nav">
+        <a href="#mission">Mission</a>
+        <a href="#services">Services</a>
+        <a href="#applications">Applications</a>
+        <a href="#diplomacy">Diplomacy</a>
+        <a href="#records">Records</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-inner">
+        <div>
+          <div class="eyebrow">Embassy of the Republic of India to Ireland</div>
+          <h1>Diplomacy.<br>Service.<br>Representation.</h1>
+          <p>Welcome to the public portal of the fictional Embassy of the Republic of India to Ireland within Dublin City Roleplay. Explore the mission, consular services, recruitment programmes, bilateral engagement, official statements and the diplomatic record.</p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#applications">Apply to the Embassy</a>
+            <a class="btn btn-gold" href="#diplomacy">View Diplomatic Affairs</a>
+            <a class="btn btn-ghost" href="#records">Open Public Record</a>
+          </div>
+        </div>
+        <div class="hero-side">
+          <div class="hero-card"><b>🇮🇳🇮🇪 India · Ireland</b><span>Structured bilateral and governmental roleplay within the DCR environment.</span></div>
+          <div class="hero-card"><b>🏛️ Mission Status</b><span>Operational · Inaugural recruitment · Premises arrangement under formalization</span></div>
+          <div class="hero-card"><b>🤝 Guiding Principle</b><span>Building Diplomatic Bridges Through Roleplay.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="notice"><strong>Roleplay notice:</strong> This portal is a fictional DCR/ERLC project. Diplomatic, consular, visa, legal, immigration and governmental functions described here exist only inside the roleplay environment.</div>
+
+    <section id="mission">
+      <div class="section-head">
+        <div><h2>Mission & Institution</h2><p>A detailed public-facing overview of the Embassy's mandate, organization and standards of conduct.</p></div>
+      </div>
+      <div class="grid grid-3">
+        <div class="card"><div class="icon">🏛️</div><div class="kicker">Mandate</div><h3>Diplomatic Mission</h3><p>Facilitate India–Ireland diplomatic engagement, official meetings, government relations, diplomatic correspondence and approved international roleplay.</p></div>
+        <div class="card"><div class="icon">🛂</div><div class="kicker">Public Service</div><h3>Consular Affairs</h3><p>Provide fictional citizen assistance, appointments, visa roleplay, consular information and case coordination.</p></div>
+        <div class="card"><div class="icon">📣</div><div class="kicker">Outreach</div><h3>Public Diplomacy</h3><p>Publish official RP notices, coordinate events, communicate programmes and build relationships with the wider DCR community.</p></div>
+        <div class="card"><div class="icon">🎭</div><div class="kicker">Culture</div><h3>Cultural Affairs</h3><p>Promote Indian culture, heritage, arts, education and people-to-people exchange through structured programmes.</p></div>
+        <div class="card"><div class="icon">💼</div><div class="kicker">Commerce</div><h3>Economic Affairs</h3><p>Support trade, business engagement, economic dialogue and commercial cooperation in the RP environment.</p></div>
+        <div class="card"><div class="icon">🛡️</div><div class="kicker">Liaison</div><h3>Defence & Security</h3><p>Coordinate approved defence-diplomacy, security liaison, ceremonial activities and inter-agency cooperation without creating independent law-enforcement authority.</p></div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="section-head">
+        <div><h2>Consular & Public Services</h2><p>Navigate the Embassy's service desks and public-facing procedures.</p></div>
+      </div>
+      <div class="grid grid-3">
+        <div class="card service"><div class="kicker">🛂 Visa Portal</div><h3>Fictional Visa Applications</h3><p>Submit a roleplay visa application, select a fictional visa category, provide an itinerary and indicate interview availability.</p><a href="https://b06c7k3ggxq.typeform.com/to/PzksEvfW" target="_blank" rel="noopener">Open Visa Form →</a></div>
+        <div class="card service"><div class="kicker">📅 Appointments</div><h3>Consular Appointments</h3><p>Use the Embassy's appointment workflow for fictional visa interviews and other approved consular engagements.</p><a href="#applications">View application portal →</a></div>
+        <div class="card service"><div class="kicker">🧑‍💼 Citizen Services</div><h3>Citizen Assistance</h3><p>Request fictional assistance with travel scenarios, consular questions and referrals to the appropriate Embassy office.</p><a href="#contact">Contact the Embassy →</a></div>
+        <div class="card service"><div class="kicker">🤝 Diplomatic Desk</div><h3>Government Engagement</h3><p>Structured channel for diplomatic correspondence, bilateral meetings, official visits and government-to-government roleplay.</p><a href="#diplomacy">See diplomatic record →</a></div>
+        <div class="card service"><div class="kicker">🎭 Cultural Desk</div><h3>Cultural Programmes</h3><p>Explore cultural events, heritage programming, educational initiatives and India–Ireland people-to-people exchange.</p><a href="#news">Browse announcements →</a></div>
+        <div class="card service"><div class="kicker">💼 Economic Desk</div><h3>Economic & Trade</h3><p>Roleplay support for trade dialogue, business engagement, investment scenarios and economic cooperation.</p><a href="#diplomacy">See departments →</a></div>
+      </div>
+    </section>
+
+    <section id="applications">
+      <div class="section-head">
+        <div><h2>Applications & Recruitment</h2><p>Three staff tracks and a dedicated fictional visa portal are maintained through external Typeform workflows.</p></div>
+      </div>
+      <div class="grid grid-2">
+        <div class="card application">
+          <div><div class="badge open">OPEN · STAFF RECRUITMENT</div><h3>🇮🇳 Embassy Staff Application</h3><p>For administrative support, operations, public diplomacy support, event coordination, archives and general Embassy work.</p><p class="small muted">Assessment themes: experience · motivation · teamwork · professionalism · DCR/ERLC compliance · scenario handling</p></div>
+          <a class="btn btn-gold" href="https://b06c7k3ggxq.typeform.com/to/n4UD2TI1" target="_blank" rel="noopener">Apply for Embassy Staff</a>
+        </div>
+        <div class="card application">
+          <div><div class="badge open">OPEN · DIPLOMATIC SERVICE</div><h3>🏛️ Diplomatic Service Application</h3><p>For diplomatic appointments involving government engagement, bilateral relations, correspondence, official meetings and protocol.</p><p class="small muted">Assessment themes: diplomatic conduct · correspondence · bilateral scenarios · protocol · confidentiality</p></div>
+          <a class="btn btn-gold" href="https://b06c7k3ggxq.typeform.com/to/DEKqR9JT" target="_blank" rel="noopener">Apply to Diplomatic Service</a>
+        </div>
+        <div class="card application">
+          <div><div class="badge open">OPEN · CONSULAR SERVICE</div><h3>🛂 Consular Service Application</h3><p>For citizen-facing services, enquiries, appointments, visa roleplay and consular administration.</p><p class="small muted">Assessment themes: communication · public service · prioritization · privacy · consular scenarios</p></div>
+          <a class="btn btn-gold" href="https://b06c7k3ggxq.typeform.com/to/FfYbuka9" target="_blank" rel="noopener">Apply to Consular Service</a>
+        </div>
+        <div class="card application">
+          <div><div class="badge rp">ROLEPLAY SERVICE</div><h3>🛃 Fictional Visa Application</h3><p>Apply for a fictional RP visa to support travel, business, student, cultural, transit or official scenarios inside DCR.</p><p class="small muted">No real-world immigration or legal effect · Do not submit sensitive real-world identity documents.</p></div>
+          <a class="btn btn-primary" href="https://b06c7k3ggxq.typeform.com/to/PzksEvfW" target="_blank" rel="noopener">Open Visa Application</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="diplomacy">
+      <div class="section-head">
+        <div><h2>Diplomatic Affairs</h2><p>The institutional framework for India–Ireland engagement, official visits, premises, security and bilateral cooperation.</p></div>
+      </div>
+      <div class="grid grid-3">
+        <div class="card"><div class="kicker">Government relations</div><h3>🇮🇳🇮🇪 Bilateral Engagement</h3><p>Formal interaction with the Government of Ireland, other DCR institutions, international missions and approved organizations.</p></div>
+        <div class="card"><div class="kicker">Protocol</div><h3>🏛️ Official Meetings</h3><p>Meetings are planned with an agenda, participating representatives, schedule, venue, briefing material and follow-up record.</p></div>
+        <div class="card"><div class="kicker">Visits</div><h3>✈️ Official Visits</h3><p>Delegation details, host institutions, ceremonial arrangements, communications and security coordination may be recorded.</p></div>
+        <div class="card"><div class="kicker">Premises</div><h3>🏢 Embassy Headquarters</h3><p>The negotiated RP arrangement identifies the Department of Motor Vehicle Transportation (DMV) building as the proposed/designated premises under an Irish-controlled licence.</p></div>
+        <div class="card"><div class="kicker">Security</div><h3>🛡️ Embassy Protection</h3><p>The negotiated framework provides for up to four armed Embassy Security members, subject to licensing, movement restrictions and the agreed premises rules.</p></div>
+        <div class="card"><div class="kicker">Good faith</div><h3>🤝 Peaceful Cooperation</h3><p>The Embassy has committed to good-faith relations, avoidance of unnecessary confrontation and compliance with the agreed licence, Irish law and DCR rules.</p></div>
+      </div>
+
+      <div class="grid grid-2" style="margin-top:16px">
+        <div class="quote">
+          <blockquote>“The Embassy is not claiming that diplomatic premises constitute Indian sovereign territory. Our position is that designated diplomatic premises should receive appropriate protection and non-interference within the RP framework.”</blockquote>
+          <cite>Embassy diplomatic position · DCR roleplay</cite>
+        </div>
+        <div class="card">
+          <div class="kicker">Negotiated premises framework</div>
+          <h3>DMV Licence — Key Terms</h3>
+          <div class="document-list">
+            <div class="doc"><div><strong>🏛️ Premises</strong><small>Department of Motor Vehicle Transportation building</small></div><span class="badge pending">Formal licence</span></div>
+            <div class="doc"><div><strong>⚖️ Authority</strong><small>Irish/Oireachtas ownership and supervision</small></div><span class="badge">Host authority</span></div>
+            <div class="doc"><div><strong>🛡️ Security</strong><small>Up to four armed Embassy Security personnel</small></div><span class="badge">Licensed</span></div>
+            <div class="doc"><div><strong>🔒 Safe zone</strong><small>No shooting inside the Embassy premises</small></div><span class="badge open">Agreed RP term</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="records">
+      <div class="section-head">
+        <div><h2>Public Diplomatic Record</h2><p>A chronological record of major Embassy developments reflected in the DCR RP process.</p></div>
+      </div>
+      <div class="searchbar">
+        <input id="search" type="search" placeholder="Search the record: premises, security, launch, recruitment…">
+        <button class="btn btn-primary" id="clearSearch">Clear</button>
+      </div>
+      <div class="timeline" id="timeline" style="margin-top:24px">
+        <div class="event record"><strong>Embassy launched and recruitment opened</strong><time>2 October 2026 · Dublin City Roleplay</time><div>The Embassy's diplomatic Discord platform launched, with inaugural recruitment announced for Embassy Staff, Diplomatic Service and Consular Service.</div></div>
+        <div class="event record"><strong>Initial premises discussion: City Hall</strong><time>2–3 October 2026</time><div>City Hall was discussed as a possible diplomatic location. Following consultation with Irish authorities and DCR administration, the premises question was moved toward an alternative arrangement.</div></div>
+        <div class="event record"><strong>Diplomatic consultation with the Government of Ireland</strong><time>3 October 2026</time><div>The Ambassador and Irish officials met to address premises, security, access, shared use, safe-zone protections and future cooperation.</div></div>
+        <div class="event record"><strong>Alternative premises proposed: DMV</strong><time>3 October 2026</time><div>The Department of Motor Vehicle Transportation (DMV) building was proposed as a larger, more suitable Embassy location under an Irish-controlled licence.</div></div>
+        <div class="event record"><strong>Embassy Security framework discussed</strong><time>3 October 2026</time><div>The framework permits up to four armed Embassy Security members, requires appropriate licences, restricts movement outside the premises, and provides that weapons remain subject to the agreed RP restrictions.</div></div>
+        <div class="event record"><strong>Embassy safe-zone provision established</strong><time>3 October 2026</time><div>The negotiating parties established that no shooting would occur inside the Embassy premises, with emergency response and government consultation used for major incidents.</div></div>
+        <div class="event record"><strong>Good-faith assurance exchanged</strong><time>3 October 2026</time><div>The Embassy reaffirmed that it would avoid unnecessary confrontation, respect Irish law and the DCR framework, and cooperate with the host government.</div></div>
+        <div class="event record"><strong>Formal licence and agreement pending finalization</strong><time>Current status</time><div>The negotiated terms are awaiting the final written licence/agreement to define the exact permitted activities, supervision, security arrangements and authorization procedures.</div></div>
+      </div>
+    </section>
+
+    <section id="documents">
+      <div class="section-head"><div><h2>Documents & Policies</h2><p>Reference material for members, applicants and Embassy personnel.</p></div></div>
+      <div class="grid grid-2">
+        <div class="card"><div class="kicker">Governance</div><h3>Embassy Rules & Diplomatic Protocol</h3><p>Standards covering conduct, official meetings, correspondence, access, chain of command, DCR oversight and roleplay integrity.</p><a class="card-link" href="docs/embassy-protocol.md">Read protocol document →</a></div>
+        <div class="card"><div class="kicker">Consular</div><h3>Fictional Visa Framework</h3><p>Scope of the RP visa process, application categories, interview workflow, privacy rules and limitations.</p><a class="card-link" href="docs/visa-framework.md">Read visa framework →</a></div>
+        <div class="card"><div class="kicker">Recruitment</div><h3>Staff & Service Recruitment</h3><p>Application tracks, assessment principles, appointment process and applicant standards.</p><a class="card-link" href="docs/recruitment.md">Read recruitment guide →</a></div>
+        <div class="card"><div class="kicker">Records</div><h3>Diplomatic Record & Premises History</h3><p>Chronology of the Embassy's launch, premises consultations, security negotiations and pending licence status.</p><a class="card-link" href="docs/diplomatic-record.md">Read the record →</a></div>
+      </div>
+    </section>
+
+    <section id="news">
+      <div class="section-head"><div><h2>Embassy Newsroom</h2><p>Public statements, announcements and diplomatic updates.</p></div></div>
+      <div class="grid grid-3">
+        <article class="card press">
+          <div class="kicker">2 October 2026</div>
+          <h3>Official Launch & Recruitment Notice</h3>
+          <p>The Embassy announced the launch of its diplomatic Discord server and opened recruitment for Embassy Staff, Diplomatic Service and Consular Service.</p>
+          <a class="card-link" href="#applications">Recruitment portal →</a>
+        </article>
+        <article class="card press">
+          <div class="kicker">3 October 2026</div>
+          <h3>India–Ireland Diplomatic Meeting</h3>
+          <p>Officials discussed Embassy premises, Irish supervision, security, safe-zone provisions, emergency coordination and future military support.</p>
+          <a class="card-link" href="#records">View record →</a>
+        </article>
+        <article class="card press">
+          <div class="kicker">2 October 2026</div>
+          <h3>Statement on High Fuel Price Protests</h3>
+          <p>The Embassy recognized the right to peaceful expression within the RP environment, urged lawful and safe demonstrations, and advised Indian nationals to use official Embassy channels for assistance.</p>
+          <a class="card-link" href="#contact">Consular assistance →</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="directory">
+      <div class="section-head"><div><h2>Mission Directory</h2><p>Public-facing offices and the Embassy's institutional hierarchy.</p></div></div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Office</th><th>Principal responsibility</th><th>Primary RP channel</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Office of the Ambassador</strong></td><td>Head of Mission, strategic direction, senior diplomatic engagement and external representation.</td><td>#🏛️・ambassadors-office</td></tr>
+            <tr><td><strong>Diplomatic Affairs</strong></td><td>Bilateral relations, correspondence, official meetings, visits and governmental engagement.</td><td>#📑・diplomatic-affairs</td></tr>
+            <tr><td><strong>Consular Affairs</strong></td><td>Citizen services, appointments, visa roleplay and consular enquiries.</td><td>#🛂・consular-affairs</td></tr>
+            <tr><td><strong>Cultural Affairs</strong></td><td>Culture, heritage, education and exchange programmes.</td><td>#🎭・cultural-affairs</td></tr>
+            <tr><td><strong>Economic Affairs</strong></td><td>Trade, commerce, business engagement and economic cooperation.</td><td>#💼・economic-affairs</td></tr>
+            <tr><td><strong>Defence Liaison</strong></td><td>Defence-diplomacy and liaison with approved security and defence institutions.</td><td>#🛡️・defence-liaison</td></tr>
+            <tr><td><strong>Public Diplomacy</strong></td><td>Press, public communications, events and community outreach.</td><td>#📣・public-diplomacy</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="section-head"><div><h2>Contact & Visitor Information</h2><p>Use the Embassy's official DCR channels for all fictional public enquiries and institutional correspondence.</p></div></div>
+      <div class="grid grid-3">
+        <div class="card"><div class="icon">💬</div><div class="kicker">Discord</div><h3>Official Embassy Server</h3><p>The Embassy's primary public portal is its official DCR Discord server.</p><p class="small muted">Invite link is distributed through the approved DCR channels.</p></div>
+        <div class="card"><div class="icon">🎫</div><div class="kicker">Assistance</div><h3>Consular Support</h3><p>Use the Embassy assistance/ticket system for private roleplay enquiries, appointments and citizen support.</p><a class="card-link" href="#services">See services →</a></div>
+        <div class="card"><div class="icon">⚖️</div><div class="kicker">Oversight</div><h3>DCR Authority</h3><p>The Embassy remains subject to DCR Management, DCR moderation, DCR rules and applicable ERLC rules.</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div><h3>Embassy of India to Ireland</h3><p>Fictional diplomatic institution within Dublin City Roleplay.</p><p class="small">Building Diplomatic Bridges Through Roleplay.</p></div>
+      <div><h3>Quick Links</h3><p><a href="#applications">Applications</a></p><p><a href="#records">Diplomatic Record</a></p><p><a href="#news">Newsroom</a></p><p><a href="#directory">Mission Directory</a></p></div>
+      <div><h3>Important</h3><p><a href="docs/embassy-protocol.md">Protocol</a></p><p><a href="docs/visa-framework.md">Visa Framework</a></p><p><a href="docs/recruitment.md">Recruitment Guide</a></p><p><a href="docs/diplomatic-record.md">Diplomatic Record</a></p></div>
+    </div>
+    <div class="footer-bottom">© 2026 Embassy of the Republic of India to Ireland · Dublin City Roleplay · Fictional / Non-Official RP Portal</div>
+  </footer>
+
+  <script>
+    const menuBtn=document.getElementById('menuBtn');
+    const nav=document.getElementById('nav');
+    menuBtn.addEventListener('click',()=>nav.classList.toggle('open'));
+    nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
+    const search=document.getElementById('search');
+    const clear=document.getElementById('clearSearch');
+    const records=[...document.querySelectorAll('.record')];
+    search.addEventListener('input',()=>{
+      const q=search.value.trim().toLowerCase();
+      records.forEach(r=>r.classList.toggle('hide', q && !r.textContent.toLowerCase().includes(q)));
+    });
+    clear.addEventListener('click',()=>{search.value='';records.forEach(r=>r.classList.remove('hide'));search.focus();});
+  </script>
+</body>
+</html>
